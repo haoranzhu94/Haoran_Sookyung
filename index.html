@@ -1,51 +1,77 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
+	<title>My Wedding Website</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Our Wedding</h1>
+		<nav>
+			<ul>
+				<li><a href="#about">About Us</a></li>
+				<li><a href="#ceremony">Ceremony</a></li>
+				<li><a href="#reception">Reception</a></li>
+        <li><a href="#photos">Photos</a></li>
+				<li><a href="#rsvp">RSVP</a></li>
+			</ul>
+		</nav>
+	</header>
 
-    <title>Our Wedding Website</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body>
-    <a href="https://www.haoranzhusookyunghwangwedding.com">Visit Example.com</a>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#details">Wedding Details</a></li>
-          <li><a href="#rsvp">RSVP</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section id="about">
-        <h2>About Us</h2>
-        <p>We're so excited to share our special day with you! Read more about us and our love story here.</p>
-      </section>
-      <section id="details">
-        <h2>Wedding Details</h2>
-        <p>Date: [date]</p>
-        <p>Location: [location]</p>
-        <p>Time: [time]</p>
-      </section>
-      <section id="rsvp">
-        <h2>RSVP</h2>
-        <p>Please let us know if you'll be able to join us for our special day.</p>
-        <form>
-          <label for="name">Name:</label>
-          <input type="text" id="name">
-          <label for="email">Email:</label>
-          <input type="email" id="email">
-          <label for="attending">Will you be attending?</label>
-          <input type="radio" id="attending" name="attending" value="yes"> Yes
-          <input type="radio" id="attending" name="attending" value="no"> No
-          <input type="submit" value="Submit">
-        </form>
-      </section>
-    </main>
-    <footer>
-      <p>Copyright [Your Names]</p>
-      <img src="https://api.qrserver.com/v1/create-qr-code/?data=[Your Data]&amp;size=150x150" alt="QR Code">
+	<main>
+		<section id="about">
+			<h2>About Us</h2>
+			<p>Here you can write about yourselves and how you met, as well as share some photos.</p>
+		</section>
 
-    </footer>
-  </body>
+		<section id="ceremony">
+			<h2>Ceremony</h2>
+			<p>Here you can provide details about the ceremony such as the date, time, and location.</p>
+		</section>
+
+		<section id="reception">
+			<h2>Reception</h2>
+			<p>Here you can provide details about the reception such as the date, time, and location.</p>
+		</section>
+    <section id="photos">
+    <h2>Photos</h2>
+    <p>Check out some photos from our engagement shoot and wedding planning process!</p>
+    <ul>
+      <li><img src="engagement-1.jpeg" alt="Engagement photo"></li>
+      <li><img src="engagement-2.jpeg" alt="Engagement photo"></li>
+      <li><img src="selfie-1.jpeg" alt="Wedding planning photo"></li>
+      <li><img src="selfie-2.jpeg" alt="Wedding planning photo"></li>
+    </ul>
+  </section>
+		<section id="rsvp">
+    <h2>RSVP</h2>
+    <form method="post" action="test.php">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="attending">Will you attend?</label>
+      <input type="radio" id="attending-yes" name="attending" value="yes" required>
+      <label for="attending-yes">Yes</label>
+      <input type="radio" id="attending-no" name="attending" value="no">
+      <label for="attending-no">No</label>
+      <label for="guests">Number of Guests:</label>
+      <input type="number" id="guests" name="guests" required>
+      <br>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" style="resize:none;"></textarea>
+      <br>
+      <button type="submit">Submit</button>
+    </form>
+		</section>
+	</main>
+
+	<footer>
+		<p>&copy; 2023 Haoran & Sookyung marriage.</p>
+	</footer>
+</body>
 </html>
+
