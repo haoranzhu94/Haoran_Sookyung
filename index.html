@@ -8,44 +8,161 @@
 </head>
 <body>
 	<header>
-		<h1>Haoran Zhu & Sookyung Hwang</h1>
+		<div style="text-align: center;">
+			<h1 class="title">Haoran Zhu & Sookyung Hwang</h1>
+		</div>
+		<style>
+			/* Center the title */
+			h1 {
+			text-align: center;
+			}
+			
+			/* Style the title */
+			.title {
+			color: #8F9779;
+			font-family: "Great Vibes", cursive;
+			font-size: 50px;
+			text-align: center;
+			margin-top: 50px;
+			}
+			
+			/* Style the header */
+			.header {
+			background-color: #F0EDE5;
+			padding: 20px;
+			}
+			
+			/* Style the navigation bar */
+			.navbar {
+			overflow: hidden;
+			background-color: #8F9779;
+			}
+			
+			/* Style the navigation links */
+			.navbar a {
+			float: left;
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 20px;
+			text-decoration: none;
+			}
+			
+			/* Style the navigation links on hover */
+			.navbar a:hover {
+			background-color: #F0EDE5;
+			color: #8F9779;
+			}
+			
+			/* Style the active navigation link */
+			.active {
+			background-color: #F0EDE5;
+			color: #8F9779;
+			}
+			
+			/* Style the body */
+			.body {
+			max-width: 1000px;
+			margin: auto;
+			padding: 20px;
+			background-color: #F0EDE5;
+			}
+			
+			/* Style the photo gallery */
+			.gallery {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-gap: 20px;
+			justify-items: center;
+			}
+			
+			/* Style the photos */
+			.gallery img {
+			width: 100%;
+			height: auto;
+			}
+			
+			/* Style the RSVP form */
+			.form {
+			max-width: 500px;
+			margin: auto;
+			background-color: white;
+			padding: 20px;
+			}
+			
+			/* Style the form inputs */
+			input[type=text], input[type=email] {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+			}
+			
+			/* Style the form submit button */
+			input[type=submit] {
+			background-color: #8F9779;
+			color: white;
+			padding: 12px 20px;
+			border: none;
+			cursor: pointer;
+			width: 100%;
+			}
+			
+			/* Style the form submit button on hover */
+			input[type=submit]:hover {
+			background-color: #F0EDE5;
+			color: #8F9779;
+			}
+			
+			/* Style the message box */
+			textarea {
+			width: 100%;
+			height: 150px;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+			}
+		</style>		
 		<nav>
 			<ul>
-				<li><a href="#about">About Us</a></li>
+				<!-- <li><a href="#about">About Us</a></li> -->
 				<li><a href="#ceremony">Ceremony</a></li>
 				<li><a href="#reception">Reception</a></li>
-        <li><a href="#photos">Photos</a></li>
 				<li><a href="#rsvp">RSVP</a></li>
+				<li><a href="#faqs">FAQs</a></li>
 			</ul>
 		</nav>
 	</header>
 
 	<main>
-		<section id="about">
+		<div style="text-align: center; width: 100%;">
+		<img src="engagement-2.jpeg">
+		<div>
+		<!-- <section id="about" style="margin-top: 50px;">
 			<h2>About Us</h2>
 			<p>Here you can write about yourselves and how you met, as well as share some photos.</p>
-		</section>
+		</section> -->
 
-		<section id="ceremony">
+		<section id="ceremony" style="margin-top: 50px;">
 			<h2>Ceremony</h2>
-			<p>Here you can provide details about the ceremony such as the date, time, and location.</p>
+			<p> We are going to have wedding ceremony in Capital, Madison at 3PM on 6/18. </p>
 		</section>
 
-		<section id="reception">
+		<section id="reception" style="margin-top: 50px;">
 			<h2>Reception</h2>
-			<p>Here you can provide details about the reception such as the date, time, and location.</p>
+			<p> Reception is at Garver Feed Mill, Canvas Room, starting from around 5PM. </p>
 		</section>
-    <section id="photos">
-    <h2>Photos</h2>
-    <p>Check out some photos from our engagement shoot and wedding planning process!</p>
-    <ul>
-      <li><img src="engagement-1.jpeg" alt="Engagement photo"></li>
-      <li><img src="engagement-2.jpeg" alt="Engagement photo"></li>
-      <li><img src="selfie-1.jpeg" alt="Wedding planning photo"></li>
-      <li><img src="selfie-2.jpeg" alt="Wedding planning photo"></li>
-    </ul>
-  </section>
-		<section id="rsvp">
+
+    <div class="photo-list" style="margin-top: 50px;">
+      <img src="engagement-1.jpeg" alt="Engagement photo">
+      <img src="selfie-1.jpeg" alt="Wedding planning photo">
+      <img src="selfie-2.jpeg" alt="Wedding planning photo">
+	<div>
+	<section id="rsvp" style="margin-top: 50px;">
     <h2>RSVP</h2>
     <!-- <form method="post" action="test.php">
       <label for="name">Name:</label>
@@ -67,11 +184,17 @@
       <button type="submit">Submit</button>
     </form> -->
 	<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd9GdkYxyWxqnzqBYy1ny-DGtiNPhRDyKAhkM9JTxqElzNJ2Q/viewform?embedded=true" width="640" height="1090" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-		</section>
+	</section>
+
+	<section id="faqs" style="margin-top: 50px;">
+		<h2>FAQs</h2>
+		<p> TBA </p>
+	</section>
+
 	</main>
 
 	<footer>
-		<p>&copy; 2023 Haoran & Sookyung marriage.</p>
+		<p>2023 Haoran & Sookyung reception</p>
 	</footer>
 </body>
 </html>
