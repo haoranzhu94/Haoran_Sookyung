@@ -63,9 +63,9 @@ header nav a:hover {
 /* Main styles */
 main {
 	margin: 20px auto;
-	max-width: 1500px;
+	max-width: 1300px;
 	padding: 20px;
-	background-color: #fff;
+	background-color: #c1d8c5;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -169,4 +169,21 @@ footer {
 
 #rsvp form button {
   margin-top: 20px;
+}
+
+.section-title {
+	font-size: 5em; /* Change the value as needed */
+  }
+  
+.photo-list {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 20px;
+}
+
+.photo-list img {
+max-width: 30%;
+height: auto;
+border-radius: 5px;
 }
